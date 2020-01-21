@@ -71,18 +71,21 @@ while True:
                 print('You lose :(')
 
             print('')
+            print(dealer ,player)
             input('Play again? Hit enter to continue')
             break
 
         if first_hand and player_score == 21:
             print('Blackjack! Nice!')
             print('')
+            print(dealer ,player)
             input('Play again? Hit enter to continue')
             break
 
         if player_score > 21:
             print('You busted!')
             print('')
+            print(dealer ,player)
             input('Play again? Hit enter to continue')
             break
 
@@ -101,4 +104,5 @@ while True:
         elif choice == '2':
             standing = True
             while calc_hand(dealer) <= 16:
-                dealer.append(cards.pop())
+               dealer.append(cards.pop())
+
